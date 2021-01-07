@@ -5,6 +5,7 @@
   "author": "Edouard Piron",
   "private": true,
   "description": "analytics dashboard",
+  "homepage": "http://BigBigDoudou.github.io/hb_dashboard",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/plugin-proposal-class-properties": "^7.7.0",
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "eslint-plugin-prettier": "^3.1.1",
+    "gh-pages": "^3.1.0",
     "lodash": "^4.17.15",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
@@ -46,7 +48,8 @@
     "dev": "webpack --mode development",
     "lint": "eslint './src/**/*.js*'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --host 0.0.0.0 --port 8090"
+    "start": "webpack-dev-server --mode development --host 0.0.0.0 --port 8090",
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": "react-app"
